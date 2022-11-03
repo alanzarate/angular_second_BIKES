@@ -1,0 +1,337 @@
+*{
+    
+    font-family: 'Poppins', sans-serif;
+}
+section.principal-view{
+    width: 100%;
+    height: 15vh;
+    background-color: #7FBCD2;
+    display: flex;
+    justify-content: flex-end;
+}
+ 
+.container .navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+.navbar .logo img{ 
+    height: 60px;
+}
+.logo span{
+    font-size: 19px;
+    color: #293462;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.navbar .links{
+    margin-right: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.links a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+    padding: 15px;
+    border-radius: 30px;
+        
+}
+
+.links .active{
+    
+    color: #293462;
+    background-color: #A5F1E9; 
+}
+ 
+ 
+ 
+.links a:hover{
+    /* background-color: #A5F1E9; */
+    
+    color: #293462;
+}
+
+
+/*---- main container ----*/
+.main{
+    display: flex;
+    background-color: #7FBCD2;
+}
+.main .content{
+    width: 750px;
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: center;
+}
+.content span{
+    color: #E1FFEE;
+    font-size: 32px;
+}
+.content .heading{
+    color: #293462;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15;
+}
+.content .paragraph{
+    font-size: 22px;
+    margin-top: 10px;
+    color: #0D00AB;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+.content .button-log{
+    width: 250px;
+    height: 80px;
+    font-size: 24px;
+    background-color: #DAB60C;
+    border: none;
+    outline: none;
+    border-radius: 65px;
+    box-shadow: 0 8px 87px rgba(0,0,0,0.2);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    line-height: 70px;;
+}
+.content .button-log:hover{
+    color: #F5D029;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.main .image{
+    width: 1000px;
+    height: 700px;
+    text-align: center;
+     
+
+}
+.main img{
+    width: auto;
+    height: 80%;
+    border-radius: 25px;
+    box-shadow: 0 8px 87px rgba(0,0,0,0.2);
+ 
+
+}
+
+ 
+
+
+/* info-section */
+.info-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  .course-col:hover{
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+  
+  }
+
+  /*sucursal section  */
+
+.suc-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.suc-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.suc-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+     
+  }
+
+   
+.layer{
+  background: rgba(0, 0, 0,0);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover{
+  background: rgba(73, 73, 72, 0.6);
+}
+.layer h3{
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+
+/*  logros-section */
+.logros-section{
+    width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.logros-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  .logros-col img{
+    width: 100%;
+    border-radius: 10px;
+    height: 60%;
+    object-fit: cover;
+  }
+  .logros-col p{
+    padding: 0;
+    text-align: justify;
+  }
+  .logros-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+/* comments section */
+.coments-section{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .coments-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+  }
+  .coments-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+  }
+  .coments-col p{
+    padding: 0;
+  
+  }
+  .coments-col h3{
+    margin-top: 15px;
+    text-align: left;
+  }
+  .coments-col .fa{
+    color: #f44336;
+  }
+  
+
+  /* -------------- footer ------------------*/
+  .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #F9E998;
+  }
+  .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+     
+  
+  }
+  .icons a i{
+    color: #000000;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 35px;
+  }
+  .icons a i:hover{
+    color: #000;
+    
+  }
+   
+ 
+.icons .fa-facebook-f:hover{
+    color: #0D00AB;
+}
+.icons .fa-instagram:hover{
+    color: #E1306C;
+}
+.icons .fa-twitter:hover{
+    color: #1DA1F2;
+}
+.icons .fa-linkedin:hover{
+    color: #1DA1F2;
+}
+.icons .fa-map-location-dot:hover{
+    color: #fff;
+}
+
+.own-content{
+    min-height: 100vh; 
+    
+    background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)), url(https://api-res.toyosa.com/images/yamaha/xtz125/contenido-web/fondo-portada.jpg)!important;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}

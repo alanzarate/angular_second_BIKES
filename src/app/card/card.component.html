@@ -1,0 +1,41 @@
+ 
+
+
+
+ 
+    <form   method="post">
+        <div class="card shadow">
+  
+        <div>
+            
+            <img  src="{{card.image}}"alt="Image1" class="img-fluid card-img-top" />
+        </div>
+        <div class="card-body">
+            <h1>{{card.title}}</h1>
+            <p class="card-title">
+                {{card.description}}
+            </p>
+
+            <h5>Fecha de lanzamiento: {{card.releaseDate}}</h5>
+             
+            <h4>Precio</h4>
+            <h5>
+                
+                <small *ngIf="card.oldPrice !== 0"><s class="text-secondary">Bs. {{card.oldPrice}}</s></small>  
+                <h2 class="price">
+                Bs. {{card.currentPrice}}
+                </h2>
+            </h5>
+  
+            <p class="card-text">
+                Marca: {{card.brand}}
+            </p>
+             
+  
+            <button   type="submit" class="btn btn-warning my-3" name="editarItem">Conoce más </button>
+            
+           
+        </div>
+        </div>
+    </form> 
+ 

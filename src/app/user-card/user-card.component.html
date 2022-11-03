@@ -1,0 +1,10 @@
+<div>
+    <h1>{{user.name}}</h1>
+    <h3>{{user.title}}</h3>
+    <p>{{user.address}}</p>
+    <div *ngIf="user.phone.length"> 
+        <p>Phone:</p>
+        <p *ngFor="let phonenumber of user.phone">{{phonenumber}}</p>
+    </div>
+    <img src="{{user.image}}" alt="">
+</div>

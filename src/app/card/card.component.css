@@ -1,0 +1,97 @@
+ 
+.container{
+    width: 95%;
+    height: 100%;
+}
+.container .navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+.navbar .logo img{ 
+    height: 60px;
+}
+.logo span{
+    font-size: 19px;
+    color: #293462;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+}
+ .navbar .links{
+    margin-right: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+ .links a{
+    margin-right: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    transition: 0.5s;
+    padding: 15px;
+    border-radius: 30px;
+        
+}
+
+ .links .active{
+    
+    color: #293462;
+    background-color: #A5F1E9; 
+}
+ 
+ 
+ 
+.principal-view1 .links a:hover{
+    /* background-color: #A5F1E9; */
+    
+    color: #293462;
+}
+
+
+
+.card-body{
+    min-height: 350px;
+    bottom: 0;
+     
+}
+.card{
+    margin-bottom: 25px;
+}
+.img-fluid{
+    min-height: 230px;
+    max-height: 231px;
+   
+    object-fit: cover;
+    
+}
+.col-md-3{
+    margin-top: 20px !important; 
+}
+.btn-warning{
+    bottom: 0;
+    position: absolute;
+    right: 10px;
+}
+.btn-danger{
+    bottom: 0;
+    left: 10px;
+    margin-left: auto;
+    position: absolute;
+}
+.card-title{
+      
+}
+.sectionEdit .img-edit{
+    max-height: 200px;
+    object-fit: cover;
+}
